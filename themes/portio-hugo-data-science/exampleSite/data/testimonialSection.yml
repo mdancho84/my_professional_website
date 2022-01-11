@@ -1,0 +1,22 @@
+---
+enable: true
+topTitle: Testimonials
+title: >
+  ## What Do Students Think of My Courses?
+
+testimonial:
+  - name: Justin Kurland, PhD
+    title: Lead Data Scientist, Northwestern Mutual 
+    image: "/images/testimonial/justin.jpg"
+    comment: "In less than 6 months after starting my first Business Science Course with Matt I had fully transitioned into a role as a lead data scientist and my life is better for it!"
+    star: 5
+  - name: Chris Selig
+    title: Data Scientist
+    image: "/images/testimonial/chris.jpg"
+    comment: "Because of all the R courses Matt Dancho has provided, I landed my first Data Scientist role. Setting up shiny dashboards in AWS was extremely helpful during my interview."
+    star: 5
+  - name: Mohana Krishna Chittoor
+    title: Lead Data Scientist, Money View
+    image: "/images/testimonial/mohana.jpg"
+    comment: "After your entry into my life, I got a 10% pay raise and then after another 6-months of 26%, and in just another 2-months a 40% hike. I can grab a job wherever I want."
+    star: 5

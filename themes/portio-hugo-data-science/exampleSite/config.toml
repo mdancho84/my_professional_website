@@ -1,0 +1,70 @@
+baseURL = "/"
+languageCode = "en-us"
+paginate = 6
+theme = "portio"
+title = "Matt's Data Science Portfolio"
+# Main Menu
+[[menu.main]]
+name = "Home"
+url = "#home"
+weight = 1
+[[menu.main]]
+name = "About"
+url = "#about"
+weight = 2
+# [[menu.main]]
+# name = "Service"
+# url = "#service"
+# weight = 3
+[[menu.main]]
+name = "Portfolio"
+url = "#portfolio"
+weight = 4
+[[menu.main]]
+name = "Resume"
+url = "#resume"
+weight = 5
+[[menu.main]]
+name = "Blog"
+url = "blog"
+weight = 6
+# [[menu.main]]
+# name = "Contact"
+# url = "#contact"
+# weight = 7
+
+# Sitemap Menu
+[[menu.sitemap]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.sitemap]]
+name = "Blog"
+url = "blog"
+weight = 2
+
+
+[params]
+blogPageURL = "blog"
+contactLink = "#contact"
+contactButtonLabel = "Hire Matt Today"
+copyright = "All right reserved copyright © [Your Name Here] [Year]"
+logo = "images/site-navigation/logo-matt.png"
+footerLogo = "images/site-navigation/logo-matt.png"
+formspreeURL = "YOUR FORMSPREE URL"
+googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
+
+
+# Social icons
+[[params.social]]
+icon = "fa-linkedin-square"
+url = "https://www.linkedin.com/"
+weight = 1
+[[params.social]]
+icon = "fa-youtube-square"
+url = "https://www.youtube.com/"
+weight = 2
+[[params.social]]
+icon = "fa-twitter-square"
+url = "https://twitter.com/"
+weight = 3

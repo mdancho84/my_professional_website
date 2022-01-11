@@ -1,0 +1,72 @@
+---
+enable: true
+topTitle: My Resume
+title: >
+  ## My Experience & Education
+
+  Over 15+ years of experience working with companies from all over the world.
+
+buttonName: "Download Resume PDF"
+buttonTarget: "/cv/resume-matt.pdf"
+
+tab1Name: Experience
+tab2Name: Education
+tab1Target: experience
+tab2Target: education
+
+
+experience:
+  - content: >
+  
+      ### Founder
+      
+      #### [Business Science](https://www.business-science.io/) 
+      
+      - Has grown the program to __3000+ students__ learning R and Python for business.
+      
+      - Leads the data science curriculum development. 
+      
+      - Mentors students leading to getting jobs and career-advancement. (See [Testimonials](#testimonial))
+    time: 2018-Present
+  - content: >
+      ### Director of Product Engineering & Market Development
+      
+      #### Bonney Forge
+
+      - Used predictive analytics to increase revenue from __$3M/year to $15M/year (5X increase).__
+    time: 2017-2018
+  - content: >
+      ### Manager of Sales Engineering 
+
+      #### Bonney Forge
+
+      - Developed lead-scoring prediction solution that helped to __increase revenue 5X.__ 
+      
+      - Implemented database to track sales quotations & Shiny Web App interface for user input.
+      
+      - Trained technical sales team on how to input database via Shiny App
+      
+      - Used machine learning to predict likelihood of purchase (LOP)
+    time: 2014-2017
+  
+
+
+education:
+  - content: >
+      #### Master of Business Administration (MBA)
+
+      Penn State University
+      
+    time: 2015
+  - content: >
+      #### Master of Industrial Engineering
+
+      University of Pittsburgh
+    
+    time: 2010
+  - content: >
+      #### Bachelor of Mechanical Engineering
+
+      Penn State University
+    time: 2006
+  

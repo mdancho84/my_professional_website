@@ -1,0 +1,51 @@
+baseURL: /
+languageCode: en-us
+paginate: 6
+theme: portio-hugo-data-science
+title: John Smith Science Portfolio
+menu:
+  main:
+    - name: Home
+      url: '#home'
+      weight: 1
+    - name: About
+      url: '#about'
+      weight: 2
+    - name: Portfolio
+      url: '#portfolio'
+      weight: 4
+    - name: Resume
+      url: '#resume'
+      weight: 5
+    - name: Blog
+      url: blog
+      weight: 6
+  sitemap:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Blog
+      url: blog
+      weight: 2
+params:
+  blogPageURL: blog
+  contactButtonLabel: Contact Matt
+  contactLink: '#contact'
+  copyright: All right reserved copyright © Matt Dancho 2022
+  footerLogo: images/site-navigation/logo-matt (2).png
+  formspreeURL: YOUR FORMSPREE URL
+  googleAnalytics: YOUR GOOGLE ANALYTICS CODE
+  logo: images/site-navigation/logo-matt (2).png
+  social:
+    - icon: fa-linkedin-square     
+      url: https://www.linkedin.com/
+      weight: 1
+    - icon: fa-youtube-square
+      url: https://www.youtube.com/
+      weight: 2
+    - icon: fa-twitter-square
+      url: https://twitter.com/
+      weight: 3
+    - icon: fa-instagram      
+      url: https://www.linkedin.com/
+      weight: 4

@@ -1,0 +1,34 @@
+---
+label: Testimonial Template
+hide_body: true
+fields:
+- type: boolean
+  name: enable
+  label: enable
+- type: text
+  name: topTitle
+  label: topTitle
+- type: textarea
+  name: title
+  label: title
+- type: field_group_list
+  name: testimonial
+  label: testimonial
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: image
+    label: image
+  - type: textarea
+    name: comment
+    label: comment
+  - type: number
+    name: star
+    label: star
+pages:
+- data/testimonialSection.yml

@@ -1,0 +1,28 @@
+---
+label: Skill Template
+hide_body: true
+fields:
+- type: boolean
+  name: enable
+  label: enable
+- type: text
+  name: topTitle
+  label: topTitle
+- type: textarea
+  name: content
+  label: content
+- type: file
+  name: image
+  label: image
+- type: field_group_list
+  name: skill
+  label: skill
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: percent
+    label: percent
+pages:
+- data/skillSection.yml

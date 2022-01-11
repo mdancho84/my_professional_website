@@ -1,0 +1,15 @@
+---
+enable: true
+topTitle: Data Scientist
+content: >
+  # Hi I'm Matt
+
+  Matt is the founder of [Business Science](https://www.business-science.io/), 
+  an online data science school 
+  that helps students become a data scientist in 6-months or less.
+buttonName: Contact Matt Dancho
+buttonIcon: 'fa fa-envelope'
+buttonURL: "#contact"
+image: images/hero/user-picture-2.jpg
+videoThumb: images/hero/data-science.gif
+videoURL: https://www.youtube.com/watch?v=rJawNrD3xlU

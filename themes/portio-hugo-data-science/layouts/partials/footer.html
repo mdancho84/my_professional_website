@@ -1,0 +1,139 @@
+<section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	
+	<div class="container">
+	  
+	  
+    {{ if .Site.Data.contactSection.enable }}
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					
+					<div class="text-light footer__cta_content">
+						<span>{{ .Site.Data.contactSection.topTitle }}</span>
+						<h2 class="mb-0">{{ .Site.Data.contactSection.title | markdownify }}</h2>
+					</div>
+					
+					
+					<div class="skill__thumb">
+              
+              <div class="skill__thumb_image">
+                  <img src="{{ .Site.Data.contactSection.image | absURL }}" alt="skill-img" style='
+                                  -webkit-mask: url({{"images/skill/skill-mask-svg.svg" | absURL}});
+                                  -webkit-mask-repeat: no-repeat;
+                                  -webkit-mask-size: contain;
+                                  -webkit-mask-position: center center;
+                              '>
+              </div>
+          </div>
+					
+					
+					
+          <div class="contact-form-input">
+            <form id="contact-form" action="{{ .Site.Params.formspreeURL }}" method="POST">
+  
+              <div class="form-row">
+  
+                <div class="form-group col-md-6 pr-3">
+                  <input type="text" class="form-control" name="Name" placeholder="Name" required />
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required />
+                </div>
+              </div>
+  
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="6" name="message" placeholder="Message"></textarea>
+              </div>
+  
+              <button type="submit" class="btn btn-light btn-zoom" id="contact-form-button">Send Message</button>
+              <p id="contact-form-status" class="mt-3 text-light"></p>
+            </form>
+            
+            
+            
+  					
+  				</div>
+  			</div>
+			</div>
+		</div>
+		{{ end }}
+		
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="{{ .Site.Params.footerLogo | absURL }}" alt="widget-logo" style="max-width:100px;">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5 ">
+					<h4 class="base-font">Sitemap</h4>
+					<ul class="unstyle-list small">
+						{{ $sitemap := .Site.Menus.sitemap }}
+						{{ range $sitemap }}
+						<li class="mb-2"><a class="text-light" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Social</h4>
+					<div class="footer__footer_social">
+  					<ul class="unstyle-list">
+  						{{ $social := .Site.Params.social }}
+  						{{ range $social }}
+  						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="{{ .url }}"><i
+  									class="fa {{ .icon }}"></i></a>
+  						</li>
+  						{{ end }}
+  					</ul>
+  				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>{{ .Site.Params.copyright }}</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_copy_right text-light ">
+					<p>Site built with <a href="https://business-science.github.io/portfoliodown/" target="_blank">portfoliodown.</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.map.APIkey }}&libraries=geometry"></script>
+<script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
+<script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
+<script src="{{ "plugins/waypoint/jquery.waypoints.min.js" | absURL }}"></script>
+<script src="{{ "plugins/magnafic-popup/jquery.magnific-popup.min.js" | absURL }}"></script>
+<script src="{{ "plugins/tweenmax/TweenMax.min.js" | absURL }}"></script>
+<script src="{{ "plugins/imagesloaded/imagesloaded.min.js" | absURL }}"></script>
+<script src="{{ "plugins/masonry/masonry.min.js" | absURL }}"></script>
+{{ $formhandler := resources.Get "js/form-handler.js" | minify }}
+<script src="{{ $formhandler.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>

@@ -1,0 +1,15 @@
+---
+label: Hero Template
+hide_body: true
+fields:
+- type: boolean
+  name: enable
+  label: enable
+- type: text
+  name: topTitle
+  label: topTitle
+- type: textarea
+  name: title
+  label: title
+pages:
+- data/contactSection.yml
