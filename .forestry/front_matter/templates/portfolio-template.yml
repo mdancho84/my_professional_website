@@ -27,5 +27,6 @@ fields:
   name: solution
   label: solution
 pages:
+- content/portfolio/New Portfolio Project.md
 - content/portfolio/project-01.md
 - content/portfolio/project-02.md
