@@ -14,9 +14,6 @@ fields:
 - type: text
   name: categories
   label: categories
-# - type: text
-#   name: service
-#   label: service
 - type: text
   name: project
   label: project
