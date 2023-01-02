@@ -2,7 +2,7 @@ baseURL: /
 languageCode: en-us
 paginate: 6
 theme: portio-hugo-data-science
-title: John Smith Science Portfolio
+title: Matt Dancho's Data Science Portfolio
 menu:
   main:
     - name: Home
