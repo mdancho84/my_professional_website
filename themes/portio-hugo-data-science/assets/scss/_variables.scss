@@ -3,11 +3,11 @@
 //
 
 // General
-$primary: #5d78ff;
-$secondary: #282f49;
+$primary: #17a2b8;
+$secondary: #0c5460;
 // Text
-$headings-color: #282f49;
-$body-color: #7e7e8a;
+$headings-color: #0c5460;
+$body-color: #212529;
 
 //
 // Typography
@@ -15,12 +15,14 @@ $body-color: #7e7e8a;
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900|Yeseva+One&display=swap");
-$font-family-base: "Poppins", sans-serif;
-$headings-font-family: "Yeseva One", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$font-family-base: "Roboto", sans-serif;
+$headings-font-family: "Montserrat", cursive;
 
 // Size
 $font-size-base: 1.125rem; // 18px
-$h1-font-size: 60px;
+$h1-font-size: 70px;
 $h2-font-size: 50px;
 $h3-font-size: 30px;
 $h4-font-size: 25px;
